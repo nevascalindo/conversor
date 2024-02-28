@@ -1,0 +1,84 @@
+/* Estilos para o conversor de temperatura */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Definir uma fonte padrão */
+    background-color: #f0f0f0; /* Cor de fundo padrão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz o body ocupar toda a altura da tela */
+}
+
+#converter {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo branco transparente */
+    padding: 20px;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+#converter h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#converter input,
+#converter select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+#converter button {
+    background-color: #4CAF50; /* Verde mais forte */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer;
+    width: 100%;
+}
+
+#resultado {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#infoExtra {
+    margin-top: 20px;
+}
+
+#imagemInfoExtra {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+#fraseInfoExtra {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    #converter {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #converter h2 {
+        font-size: 20px;
+    }
+
+    #converter input,
+    #converter select {
+        width: calc(100% - 20px);
+    }
+}

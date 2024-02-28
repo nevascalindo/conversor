@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="converter">
+        <h2>Conversor de Temperatura</h2>
+        <input type="number" id="tempInput" placeholder="Temperatura">
+        <select id="tempTypeInput">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <br><br>
+        <select id="tempTypeOutput">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <br><br>
+        <button onclick="converterTemperatura()">Converter</button>
+        <p id="resultado"></p>
+        <div id="infoExtra" style="display: none;">
+            <img id="imagemInfoExtra" src="" alt="Imagem informativa">
+            <p id="fraseInfoExtra"></p>
+        </div>
+        
+    </div>
+
+    <script src="assets/js/script.js"></script> 
+        
+</body>
+</html>
